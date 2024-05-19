@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  <br><br>
+
+
+
+    <div class="container">
+        <div class="card shadow mb-4">
+          <div class="card-body">
+           <h1 style="text-align: center;">Liste des événements</h1>
+            <table width="90%"  id="test" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Nom de l'événement</th>
+                  <th scope="col"> Club</th>
+                  <th scope="col">Date de l'événement</th>
+                  <th scope="col">Action 1</th>
+                  <th scope="col">Action 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr > 
+                  <td scope="row" >Cours de robotique</td>
+                  <td scope="row">IEEE</td>
+                  <td scope="row"> 13/12/2023</td>  
+                  
+                  <td scope="row" class="btn1" style="text-align: center;" onclick="window.location.href = '/updateEvenements';">
+                    <button class="btn btn-warning">
+                      <img src="../assets/img/pencil-9479.png" height="32" width="32">
+                    </button>
+                  </td>
+                  <td  scope="row" class="btn2" style="text-align: center;">
+                    <button type="button" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')" >
+                        <img src="../assets/img/delete.png" height="32" width="32">
+                    </button>
+                      
+                  </td> 
+                </tr>
+              </tbody>
+                          <!-- partie 2  -->
+    
+              <tbody>
+                <tr>
+                  <td>Construire une drone</td>
+                  <td>CIOA</td>
+                  <td>01/01/2024</td>
+                  
+                  <td class="btn1" style="text-align: center;" onclick="window.location.href = '/updateEvenements';">
+                    <button class="btn btn-warning">
+                      <img src="../assets/img/pencil-9479.png" height="32" width="32">
+                    </button>
+                  </td>
+                  <td class="btn2" style="text-align: center;">
+                    <button type="button" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')" >
+                        <img src="../assets/img/delete.png" height="32" width="32">
+                    </button>
+                    
+                      
+                  </td>
+                </tr>
+                
+              </tbody>
+                          <!-- partie 3 -->
+    
+              <tbody>
+                <tr>
+                  <td>Formation Sprinng boot</td>
+                  <td>Club robot nabeulien </td>
+                  <td>13/01/2024</td>
+                  
+                  <td class="btn1" style="text-align: center;" onclick="window.location.href = '/updateEvenements';">
+                    <button class="btn btn-warning">
+                      <img src="../assets/img/pencil-9479.png" height="32" width="32">
+                    </button>
+                  </td>
+                  <td class="btn2" style="text-align: center;">
+                    <button type="button" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')" >
+                        <img src="../assets/img/delete.png" height="32" width="32">
+                    </button>
+                    
+                      
+                  </td>
+                </tr>
+                
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>AISEC</td>
+                  <td>Concours de jeux gaming</td>
+                  <td>13/12/2023</td>
+                  
+                  <td class="btn1" style="text-align: center;" onclick="window.location.href = '/updateEvenements';">
+                    <button class="btn btn-warning">
+                      <img src="../assets/img/pencil-9479.png" height="32" width="32">
+                    </button>
+                  </td>
+                  <td class="btn2" style="text-align: center;">
+                    <button type="button" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')" >
+                        <img src="../assets/img/delete.png" height="32" width="32">
+                    </button>
+                    
+                      
+                  </td>
+                </tr>           
+              </tbody>
+               <!-- partie 4  -->
+              <tbody>
+                <tr>
+                  <td>formation power BI</td>
+                  <td>Club orange</td>
+                  <td>13/12/2023</td>
+                  
+                  <td class="btn1" style="text-align: center;" onclick="window.location.href = '/updateEvenements';">
+                    <button class="btn btn-warning">
+                      <img src="../assets/img/pencil-9479.png" height="32" width="32">
+                    </button>
+                  </td>
+                  <td class="btn2" style="text-align: center;" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet élément ?')"   >
+                    <button type="button" class="btn btn-danger" >
+                        <img src="../assets/img/delete.png" height="32" width="32">
+                    </button>
+                    
+                    
+                  </td>
+                </tr>           
+              </tbody>
+
+            </table>
+          </div>
+          <!-- <a type="button" href="/dashboard"><img src="../assets/img/retourne.png" alt="Logo" width="35" height="35">
+          </a> -->
+        </div>
+      </div>
+      <script>
+        function handleClick() {
+    if (confirm('Are you sure you want to delete this item?')) {
+        window.location.href = '/';
+    }
+}
+        </script>
+
+
+
+</body>
+</html>
+

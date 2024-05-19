@@ -1,0 +1,120 @@
+.text-success {
+    color: #3fdc7b !important;
+    margin-right: 3% ;
+}
+
+#popular-destination {
+    padding: 0 10% ;
+    margin-bottom: 50px;
+    margin-top: 5%;
+}
+#popular-destination .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+}
+#popular-destination .content .box {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+.box .content  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.box .content p {
+    padding: 2px;
+    font-size: 12px;
+}
+.box .content p:nth-child(3){
+    margin-bottom: 25px;
+}
+.box .content a {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+.box:hover {
+    box-shadow: 0 0 10px #29d9d5;
+}
+.box:hover .content {
+    transform: translateX(0);
+}
+
+.actuliser 
+{
+
+    padding-top: 10%; 
+    margin-right: 30% ;
+    left: 30%;
+    
+}
+
+.section__title
+{
+    margin-left: 8%;
+    font-size: 2em; /* Ajustez selon vos besoins */
+
+
+    bottom: -10px; /* Ajustez la position verticale selon vos besoins */
+    left: 0;
+    
+}
+.section__title {
+    color: #39e66c; /* Couleur du texte */
+    font-weight: bold;
+    font-size: 2em; /* Ajustez selon vos besoins */
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Ajustez la position verticale selon vos besoins */
+    left: 0;
+    width: 100%; /* Largeur de la ligne */
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: #39e66c; /* Couleur de la ligne */
+}
+
+
+.underline:hover {
+    color: red; /* Change text color on hover */
+}
+
+.underline:hover::after {
+    background-color: red; /* Change line color on hover */
+}
+
+.title
+{
+    margin-top: 4%;
+    margin-left: 9%;
+    margin-right: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+}

@@ -1,0 +1,104 @@
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    height: 30%;
+  }
+   */
+  /* .btn1, .btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .btn2 button 
+  {
+    background-color: white; 
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn1 button 
+  {
+    background-color: white; 
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* Style pour le modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  }
+  
+  /* Style pour le contenu du modal */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centrage vertical */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Limite la largeur du modal */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Ombre */
+  }
+  
+  /* Style pour le bouton de fermeture */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style pour les boutons du modal */
+  .deletebtn {
+    background-color: #f44336; /* Rouge */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .cancelbtn:hover, .deletebtn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style pour le conteneur des boutons */
+  .btn-container {
+    text-align: center;
+  }
+  /* Style pour les boutons du modal */
+  .cancelbtn {
+    background-color: #7F7F7F; /* Rouge */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  /* Style pour les boutons sur les petits écrans */
+  @media screen and (max-width: 600px) {
+    .cancelbtn, .deletebtn {
+      width: 100%;
+    }
+  }
+
+ 
